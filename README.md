@@ -11,6 +11,8 @@ Ou baixe a pasta compactada do projeto.
 
 A página inicial do jogo encontra-se no arquivo [index.html](https://github.com/Angelo-Marcos/Jogo-da-Forca/blob/main/index.html "Página inicial") abra o arquivo no navegador de internet para rodar o jogo.
 
+Ou acesse [Jogo da Forca](https://jogodaforca-byangelo.netlify.app/ "Jogo da Forca") para jogar.
+
 ### Como jogar
 
 Na página inicial do jogo existem dois modos (Single Player e Multiplayer).
