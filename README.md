@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+## Jogo da Forca
 
-You can use the [editor on GitHub](https://github.com/Angelo-Marcos/Jogo-da-Forca/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Este é um pequeno projeto onde implementado o jogo da forca usando JavaScript.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Como rodar o jogo
 
-### Markdown
+Faça o clone do projeto:
+> git clone https://github.com/Angelo-Marcos/Jogo-da-Forca.git
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Ou baixe a pasta compactada do projeto.
 
-```markdown
-Syntax highlighted code block
+A página inicial do jogo encontra-se no arquivo [index.html](https://github.com/Angelo-Marcos/Jogo-da-Forca/blob/main/index.html "Página inicial") abra o arquivo no navegador de internet para rodar o jogo.
 
-# Header 1
-## Header 2
-### Header 3
+### Como jogar
 
-- Bulleted
-- List
+Na página inicial do jogo existem dois modos (Single Player e Multiplayer).
 
-1. Numbered
-2. List
+No modo 'Single Player', comece o jogo clicando no botão de 'Nova Palavra' onde será carregado os campos do tamanho da palavra a ser adivinhada, a palavra é sorteada aleatoriamente dentro de uma biblioteca de palavras já definidas no código da aplicação, caso queira é possível adicionar novas palavras manualmente na biblioteca, modificando no arquivo [pages.js](https://github.com/Angelo-Marcos/Jogo-da-Forca/blob/main/js/pages.js "Script js").
+Após carregada a palavra o campo para o jogador inserir a letra é habilitado e o jogador pode tentar adivinhar a palavra digitando a letra e clicando em 'Jogar'. Clicando em 'Nova Palavra' novamente, outra palavra é carregada aleatoriamente.
 
-**Bold** and _Italic_ and `Code` text
+No modo 'Multiplayer', comece o jogo digitando a palavra a ser adivinhada por outra pessoa e clique em confirmar, onde será carregado os campos do tamanho da palavra a ser adivinhada.
+Após carregada a palavra o campo para o jogador inserir a letra é habilitado, o campo para inserir uma palavra é desabilitado e o jogador pode tentar adivinhar a palavra digitando a letra e clicando em 'Jogar'. Clicando em 'Nova Palavra' o jogador pode digitar outra palavra.
 
-[Link](url) and ![Image](src)
-```
+### Regras do jogo
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Angelo-Marcos/Jogo-da-Forca/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- O jogador possui 7 chances para adivinha uma palavra.
+- Digite apenas letras.
+- Escreva uma palavra existente (modo Multiplayer).
