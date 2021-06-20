@@ -1,6 +1,6 @@
 ## Jogo da Forca
 
-Este é um pequeno projeto onde implementado o jogo da forca usando JavaScript.
+Este é um pequeno projeto onde foi implementado o jogo da forca usando JavaScript.
 
 ### Como rodar o jogo
 
