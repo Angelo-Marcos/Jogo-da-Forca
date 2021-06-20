@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/morte.png" type="image/jpg">
+    <script type="text/javascript" src="js/pages.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Jogo da Forca</title>
+</head>
+
+<body>
+    <div class="container-fluid px-0" id="container">
+        <div class="container-fluid ">
+            <div class="menu">
+                <h1>Jogo da Forca</h1>
+                <img src="images/forca.png" alt="Forca">    
+                <p>
+                    A união faz a forca!
+                </p>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="inicio">
+                <button id="novaPalavra" onclick="multiplayer()">Nova Palavra</button>
+                <button><a href="index.html">Sair</a></button>
+            </div>
+    
+            <div class="inputPlayer">
+                <input type="text" id="palavraPlayer" class="palavraJogador" placeholder="Digite uma palavra">
+                <button type="button" id="btn-confirmar" value="Confirmar" onclick="multiplayer()">Confirmar</button>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div id="palavras">
+                <input type="text" id="letra0" class="letra" maxlength="1">
+                <input type="text" id="letra1" class="letra" maxlength="1">
+                <input type="text" id="letra2" class="letra" maxlength="1">
+                <input type="text" id="letra3" class="letra" maxlength="1">
+                <input type="text" id="letra4" class="letra" maxlength="1">
+                <input type="text" id="letra5" class="letra" maxlength="1">
+                <input type="text" id="letra6" class="letra" maxlength="1">
+                <input type="text" id="letra7" class="letra" maxlength="1">
+                <input type="text" id="letra8" class="letra" maxlength="1">
+                <input type="text" id="letra9" class="letra" maxlength="1">
+                <input type="text" id="letra10" class="letra" maxlength="1">
+                <input type="text" id="letra11" class="letra" maxlength="1">
+                <input type="text" id="letra12" class="letra" maxlength="1">
+                <input type="text" id="letra13" class="letra" maxlength="1">
+                <input type="text" id="letra14" class="letra" maxlength="1">
+                <input type="text" id="letra15" class="letra" maxlength="1">
+                <input type="text" id="letra16" class="letra" maxlength="1">
+                <input type="text" id="letra17" class="letra" maxlength="1">
+                <input type="text" id="letra18" class="letra" maxlength="1">
+            </div>
+    
+            <div class="controlPlayer">
+                <input type="text" id="letraPlayer" class="letraJogador" maxlength="1">
+                <button onclick="start()">Jogar</button>
+                <div id="letrasDigitadas">
+                    Letras digitadas:
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div id="rodape">
+                <p class="p-rodape">
+                    Acesse:
+                    <br>
+                    <a href="https://www.facebook.com/marcos07deoliveira"><img class="img-rodape" src="images/Facebook.png"
+                            alt="Facebook"></a>
+                    <a href="https://twitter.com/Angelomaarkos?s=08"><img class="img-rodape" src="images/twitter.png"
+                            alt="Twitter"></a>
+                    <a href="https://www.instagram.com/mr_anjo7/"><img class="img-rodape" src="images/instagram.png"
+                            alt="Instagram"></a>
+                    <br>
+                    <a class="link-rodape" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzSblwSWMm
+                    StVdwCGrChVRGhgCgSzfhlXMvSlpWChvmtgLFCvKrQDSMJCFQRhDvxxCGq">angelopc7@gmail.com</a>
+                    <br>
+                    © Desenvolvido por Angelo Marcos
+                </p>
+    
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#letraPlayer').attr("disabled", true)
+        $('#btn-jogar').attr("disabled", true)
+
+        $("#btn-confirmar").click(function () {
+            $('#palavraPlayer').attr("disabled", true)
+            $('#btn-confirmar').attr("disabled", true)
+            $('#letraPlayer').attr("disabled", false)
+            $('#btn-jogar').attr("disabled", false)
+            for (var i = 0; i < 19; i++) {
+                $('#letra' + i).attr("disabled", true)
+
+            }
+        })
+
+        $("#novaPalavra").click(function () {
+            $('#palavraPlayer').attr("disabled", false)
+            $('#btn-confirmar').attr("disabled", false)
+            $('#letraPlayer').attr("disabled", true)
+            $('#btn-jogar').attr("disabled", true)
+
+        })
+
+        var letra
+        for (var i = 0; i < 19; i++) {
+            letra = window.document.getElementById('letra' + i).value = ''
+            letra = window.document.getElementById('letra' + i).style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>

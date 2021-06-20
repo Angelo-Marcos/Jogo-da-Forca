@@ -1,0 +1,142 @@
+@import url('http://fonts.cdnfonts.com/css/avara');
+
+body {
+    background-color: #e4dcdcfa;
+    
+}
+
+#container {
+    display: block;
+    height: 100vh;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.menu {
+    font-family: 'Avara', sans-serif;
+}
+
+.inicio,
+.inputPlayer {
+    margin-bottom: 20px;
+}
+
+.inputPlayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-morte {
+    display: flex;
+    justify-content: center;
+}
+
+.menu img,
+.img-morte img{
+    width: 100px;
+    height: 150px;
+}
+
+button {
+    width: 100px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    font: 700 13px Archivo;
+    background-color: #ffffff;
+    border-radius: 20px;
+    transition: background 0.2s;
+    color: #000000;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font: 700 13px Archivo;
+    color: #000000;
+    transition: background 0.2s;
+}
+
+.palavra {
+    margin-bottom: 10px;
+}
+
+.letra {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.2px solid;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.letraJogador {
+    width: 30px;
+    height: 25px;
+    border-bottom: 0.2px solid;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.palavraJogador {
+    height: 25px;
+    width: 250px;
+    border-bottom: 0.2px solid;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#letrasDigitadas {
+    margin-top: 20px;
+}
+
+.controlPlayer {
+    margin-top: 20px;
+}
+
+
+#rodape {
+    display: flex;
+    margin: 40px 0 0 0;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+}
+
+.link-rodape {
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 1.4s;
+    
+}
+
+.link-rodape:hover {
+    color: #000000;
+    background: #ffffff;
+    border-radius: 7px;
+}
+
+.img-rodape {
+    width: 40px;
+    height: 40px;
+    filter:grayscale(100%);
+}
